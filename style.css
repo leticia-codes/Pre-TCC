@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;/* Serve para ativar o modelo de caixa de dentro do seu site asssim eu consigo definir: margim, border e padding*/
+    margin: 0%;/*controla a distancia das caixas*/
+    padding: 0%;/*controla o espaçamento internamente das caixas*/
+}
+header{
+	display: inline-block;
+}

@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pré TCC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessy Nails</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff0f5;
+        }
+
+        header {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 20px;
+			display: inline-block;
+        }
+
+        nav {
+            background-color: #ff85a2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .servicos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #d63384;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #b0256a;
+        }
+    </style>
 </head>
 <body>
-	
+
+<header>
+    <h1>Jessy Nails</h1>
+    <p>Beleza e cuidado para suas mãos</p>
+
+
+<nav>
+    <a href="./inicio">Início</a>
+    <a href="./Serviços">Serviços</a>
+    <a href="./Contato">Contato</a>
+</nav>
+</header>
+
+<section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Somos especialistas em manicure e pedicure, oferecendo serviços de alta qualidade para realçar sua beleza.</p>
+</section>
+
+<section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+        <div class="card">
+            <h3>Manicure</h3>
+            <p>Cuidados completos para suas unhas.</p>
+        </div>
+        <div class="card">
+            <h3>Pedicure</h3>
+            <p>Tratamento e beleza para seus pés.</p>
+        </div>
+        <div class="card">
+            <h3>Unha em Gel</h3>
+            <p>Alongamento resistente e elegante.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Agende seu horário conosco!</p>
+    <button onclick="alert('Contato via WhatsApp em breve!')">Agendar</button>
+</section>
+
+<footer>
+    <p>&copy; 2026 Studio Bella Unha</p>
+</footer>
+
 </body>
 </html>
