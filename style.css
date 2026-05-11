@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+/* RESET GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* =========================
+     ESTILO GERAL
+  ========================== */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffdf8;
+    color: #333;
+  }
+  
+  /* =========================
+     MENU / HEADER
+  ========================== */
+  header {
+    background-color: white;
+    border-bottom: 2px solid #d4af37;
+    padding: 18px 8%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #c59d2a;
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    font-style: normal;     
+                                   
+  }
+  
+  /* Links do menu */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: 0.3s;
+    
+  }
+  
+  .nav-links a:hover {
+    color: #c59d2a;
+  }
+  
+  /* =========================
+     BANNER PRINCIPAL
+  ========================== */
+  .banner {
+    height: 400px;
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+      ),
+      url("https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=1400&auto=format&fit=crop");
+  
+    background-size: 1500px;
+    background-position: center;
+
+    
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+    color: white;
+  }
+  
+  .banner-content h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    margin: 30px;
+    
+  }
+  
+  .banner-content p {
+    font-size: 18px;
+  }
+  
+  /* =========================
+     SEÇÃO SOBRE
+  ========================== */
+  .sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  
+    padding: 80px 8%;
+    flex-wrap: wrap;
+  }
+  
+  /* Imagem da seção */
+  .sobre-imagem img {
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Texto da seção */
+  .sobre-texto {
+    max-width: 500px;
+  }
+  
+  .sobre-texto h2 {
+    color: #c59d2a;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .sobre-texto p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+  
+  /* =========================
+     SEÇÃO SERVIÇOS
+  ========================== */
+  .servicos {
+    padding: 80px 8%;
+    background-color: #4d4a43;
+    text-align: center;
+  }
+  
+  .servicos h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 50px;
+  }
+  .servicos h3 {
+    font-size: 25px;
+    color: #c59d2a;
+    margin-bottom: 30px;
+  }
+  
+  /* Área dos cards */
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  /* Card individual */
+  .card {
+    width: 180px;
+    background-color: white;
+    border-radius: 12px;
+    border-bottom:solid 1px #555;
+    padding: 15px;
+  
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+    transition: 0.3s;
+  }
+  
+  /* Efeito hover */
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  /* Espaço da imagem */
+  .card-img {
+    height: 150px;
+    width: 100%;
+    background-color: #ccc092;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .card-img img{
+    border-radius: 10px;
+  }
+  
+  /* Texto do card */
+  .card p {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* =========================
+     RODAPÉ
+  ========================== */
+  footer {
+    background-color: #c59d2a;
+    color: white;
+    padding: 40px 8%;
+  }
+  
+  /* Container do rodapé */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Cada bloco do rodapé */
+  .footer-item h3 {
+    margin-bottom: 12px;
+  }
+  
+  .footer-item p {
+    margin-bottom: 6px;
+  }
+  
+  /* =========================
+     RESPONSIVIDADE
+  ========================== */
+  @media (max-width: 900px) {
+  
+    .navbar {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .banner-content h1 {
+      font-size: 32px;
+    }
+  
+    .sobre {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .sobre-imagem img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  }
