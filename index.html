@@ -1,123 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessy Nails</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #fff0f5;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jessy Nails</title>
 
-        header {
-            background-color: #d63384;
-            color: white;
-            text-align: center;
-            padding: 20px;
-			display: inline-block;
-        }
-
-        nav {
-            background-color: #ff85a2;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        .servicos {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 200px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        footer {
-            background-color: #d63384;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        button {
-            background-color: #d63384;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #b0256a;
-        }
-    </style>
+  <!-- Ligação do arquivo CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <h1>Jessy Nails</h1>
-    <p>Beleza e cuidado para suas mãos</p>
+  <!-- =========================
+       MENU / HEADER
+       Logo na esquerda e links na direita
+  ========================== -->
+	<header>
+		<nav class="navbar">
+		  <div class="logo">
+		   Jessy Nails
+		  </div>
+	
+		  <ul class="nav-links">
+			<li><a href="./index.html">Início</a></li>
+			<li><a href="./sobre.html">Sobre</a></li>
+			<li><a href="./servico.html">Serviços</a></li>
+			<li><a href="./local.html">Localização</a></li>
+			<li><a href="./contato.html">Contato</a></li>
+		  </ul>
+		</nav>
+	  </header>
 
 
-<nav>
-    <a href="./inicio">Início</a>
-    <a href="./Serviços">Serviços</a>
-    <a href="./Contato">Contato</a>
-</nav>
-</header>
-
-<section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Somos especialistas em manicure e pedicure, oferecendo serviços de alta qualidade para realçar sua beleza.</p>
-</section>
-
-<section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servicos">
-        <div class="card">
-            <h3>Manicure</h3>
-            <p>Cuidados completos para suas unhas.</p>
-        </div>
-        <div class="card">
-            <h3>Pedicure</h3>
-            <p>Tratamento e beleza para seus pés.</p>
-        </div>
-        <div class="card">
-            <h3>Unha em Gel</h3>
-            <p>Alongamento resistente e elegante.</p>
-        </div>
+  <!-- =========================
+       BANNER PRINCIPAL
+  ========================== -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Beleza, Elegância e Cuidado</h1>
+      <p>Transformando unhas em verdadeiras obras de arte.</p>
     </div>
-</section>
+  </section>
 
-<section id="contato">
-    <h2>Contato</h2>
-    <p>Agende seu horário conosco!</p>
-    <button onclick="alert('Contato via WhatsApp em breve!')">Agendar</button>
-</section>
+  <!-- =========================
+       SEÇÃO SOBRE / HISTÓRIA
+       Texto ao lado da imagem
+  ========================== -->
+  <section class="sobre">
+    
+    <div class="sobre-imagem">
+      <img src="./Imagens/banner 1.png" alt="Manicure">
+    </div>
 
-<footer>
-    <p>&copy; 2026 Studio Bella Unha</p>
-</footer>
+    <div class="sobre-texto">
+      <h2>Nossa História</h2>
+      <p>
+       Tudo começou com uma jovem que, para ajudar sua tia nas finanças,
+        descobriu na arte de fazer unhas um hobbie que logo se transformou em paixão. 
+        No início, atendia em domicílio, conquistando clientes fiéis graças ao cuidado 
+        e dedicação em cada detalhe.
+      </p>
+
+      <p>
+        Com o tempo, ela evoluiu, estudou novas técnicas e ampliou seus serviços, 
+        passando das esmaltações simples para estilos modernos, como as unhas de gel. 
+        O atendimento caseiro deu lugar ao sonho realizado de abrir seu próprio salão, 
+        símbolo de esforço e perseverança que transformou um hobbie em profissão.
+      </p>
+       <a href="./sobre.html" class="btn-chamada">Saiba mais</a>
+    </div>
+
+  </section>
+  
+     
+   
+
+  <section class="por-que-escolher">
+    <div class="container-escolha">
+      <h3 class="titulo-principal-escolha">Por que Jessy Nails</h3>
+      <p class="legenda-escolha">Entenda por que somos a escolha de quem busca sofisticação com propósito.</p>
+      
+      <div class="grid-beneficios">
+        <div class="item-beneficio">
+          <div class="icone-beneficio">✦</div>
+          <h4>Beleza com Propósito</h4>
+        </div>
+        <div class="item-beneficio">
+          <div class="icone-beneficio">❀</div>
+          <h4>Experiência Sensorial</h4>
+        </div>
+        <div class="item-beneficio">
+          <div class="icone-beneficio">✔</div>
+          <h4>Profissionais de Excelência</h4>
+        </div>
+        <div class="item-beneficio">
+          <div class="icone-beneficio">✴</div>
+          <h4>Ambiente Sofisticado</h4>
+        </div>
+        <div class="item-beneficio">
+          <div class="icone-beneficio">⏱︎</div>
+          <h4>Sempre Com Você</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       CHAMADA PARA SEÇÃO DE SERVIÇOS
+  ========================== -->
+  <section class="servicos">
+    <div class="chamada-agendamento">
+      <div class="conteudo-chamada">
+        <h2 class="titulo-extraordinario">A Escolha de Quem Busca o Extraordinário</h2>
+        <p class="descricao-extraordinaria">
+          Viva uma experiência de cuidado e transformação com quem domina <br>
+          a arte da sofisticação e entende o que realça sua verdadeira beleza.
+        </p>
+        <a href="./servico.html" class="btn-experiencia-exclusiva">CONHEÇA NOSSOS SERVIÇOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       RODAPÉ
+       Informações lado a lado
+  ========================== -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-item">
+        <h3>Jessy Nails</h3>
+        <p>Beleza nas suas mãos</p>
+      </div>
+      <div class="footer-item">
+        <h3>Contato</h3>
+        <p>(11) 98561-1627</p>
+        <p>jessytirassanailsdesing@gmail.com</p>
+      </div>
+      <div class="footer-item">
+        <h3>Redes Sociais</h3>
+        <p>Instagram: @jessy_tirassanails</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
